@@ -24,7 +24,6 @@
     "types": "./dist/src/index.d.ts"
   },
   "scripts": {
-    "badges": "coverage-badges",
     "prebuild": "npm run clean",
     "build": "npx webpack --mode production",
     "prechangelog": "git add ./package.json",
@@ -54,7 +53,6 @@
     "winston": "^3.17.0"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.24.7",
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "@eslint/compat": "^1.1.1",
@@ -64,7 +62,6 @@
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.13",
     "auto-changelog": "^2.5.0",
-    "coverage-badges-cli": "^2.1.0",
     "cspell": "^8.18.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
