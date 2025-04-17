@@ -13,7 +13,7 @@ export default {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
-    ]
+    ],
   },
   resolve: {
     extensions: ['.ts', '.js'],
@@ -21,21 +21,21 @@ export default {
     alias: {
       '@app': path.resolve(__dirname, 'src/'),
     },
-		fallback: {
-			"buffer": false,
-			"http": false,
-			"https": false,
-      "fs": false,
-			"os": false,
-			"path": false,
-      "util": false,
-			"zlib": false
-		}
+    fallback: {
+      buffer: false,
+      http: false,
+      https: false,
+      fs: false,
+      os: false,
+      path: false,
+      util: false,
+      zlib: false,
+    },
   },
   output: {
     filename: 'index.js',
     globalObject: 'this',
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'umd',
-  }
+  },
 };
