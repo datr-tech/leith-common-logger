@@ -16,26 +16,15 @@ export default {
     ],
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.js', '.json', '.ts'],
     modules: ['node_modules'],
     alias: {
-      '@app': path.resolve(__dirname, 'src/'),
-    },
-    fallback: {
-      buffer: false,
-      http: false,
-      https: false,
-      fs: false,
-      os: false,
-      path: false,
-      util: false,
-      zlib: false,
+      '@app-leith-common-logger': path.resolve(__dirname, 'src/'),
     },
   },
+	target: "node",
   output: {
     filename: 'index.js',
-    globalObject: 'this',
-    path: path.resolve(__dirname, 'dist'),
-    libraryTarget: 'umd',
+    path: path.resolve(__dirname, 'dist')
   },
 };
